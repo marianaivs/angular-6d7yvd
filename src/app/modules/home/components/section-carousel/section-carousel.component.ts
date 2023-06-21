@@ -7,7 +7,7 @@ import { Show } from '../../../../core/interfaces/show.interface';
   <section class="bg-gray-100 py-60px">
   <div class="flex flex-nowrap flex-row justify-center gap-8">
     <ng-container *ngIf="shows.length; else posterEmptyState">
-      <!--<show-poster *ngFor="let show of shows; trackBy: trackById" [show]="show"></show-poster>-->
+      <!--<app-show-poster *ngFor="let show of shows; trackBy: trackById" [show]="show"></app-show-poster>-->
     </ng-container>
     <ng-template #posterEmptyState>
       <p>Where did all the shows go?</p>
