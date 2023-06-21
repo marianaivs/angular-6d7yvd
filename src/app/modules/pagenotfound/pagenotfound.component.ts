@@ -13,6 +13,7 @@ import { Component, OnInit } from '@angular/core';
     :host {
       display: flex;
       flex-direction: column;
+      flex: 1;
     }
     `,
   ],
