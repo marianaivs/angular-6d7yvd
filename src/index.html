@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ShowTrackr</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              primary: '#540CFA',
+              blue: {
+                300: '#32FBFC',
+                500: '#3214F2',
+              },
+              purple: {
+                300: '#9C09DB',
+                500: '#1C0FD7',
+              },
+              shade: 'rgba(36, 8, 128, 0.15)',
+              orange: {
+                300: '#F2C314',
+                500: '#FC3832',
+              },
+              gray: {
+                100: '#F1F5F9',
+                300: '#E5E9F2',
+                500: '#8492A6',
+                900: '#273444',
+                950: '#0C1D31',
+              },
+            },
+            fontSize: {
+              sm: ['12px', '1.5'],
+              base: ['16px', '1.5'],
+              lg: ['18px', '1.5'],
+              xl: ['20px', '1.5'],
+              '2xl': ['30px', '1.2'],
+              '3xl': ['60px', '1.2'],
+            },
+            spacing: {
+              '60px': '60px',
+            },
+            maxWidth: {
+              'boxed-sm': '700px',
+              'boxed-md': '1100px',
+              'boxed-lg': '1200px',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="overflow-x-hidden">
+    <app-root></app-root>
+  </body>
+</html>

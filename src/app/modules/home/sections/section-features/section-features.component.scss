@@ -1,0 +1,19 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+.gradient1 {
+  background: rgb(156, 9, 219);
+  background: linear-gradient(135deg, rgba(156, 9, 219, 1) 0%, rgba(28, 15, 215, 1) 100%);
+}
+
+.gradient2 {
+  background: rgb(242, 195, 20);
+  background: linear-gradient(135deg, rgba(242, 195, 20, 1) 0%, rgba(252, 56, 50, 1) 100%);
+}
+
+.gradient3 {
+  background: rgb(50, 251, 252);
+  background: linear-gradient(135deg, rgba(50, 251, 252, 1) 0%, rgba(50, 20, 242, 1) 100%);
+}

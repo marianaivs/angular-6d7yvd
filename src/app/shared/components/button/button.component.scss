@@ -1,0 +1,31 @@
+:host {
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 16px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  max-width: fit-content;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+
+  &.appearance-flat {
+    background-color: #540cfa;
+    color: white;
+    border-radius: 4px;
+    &:hover {
+      background-color: #320796;
+    }
+  }
+
+  &.appearance-ghost {
+    color: #540cfa;
+  }
+}
