@@ -9,7 +9,17 @@ interface Social {
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss'],
+  styles: [
+    `
+    :host {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 2rem;
+      padding-top: 1rem;
+    }
+    `,
+  ],
 })
 export class FooterComponent {
   socials: Social[] = [
