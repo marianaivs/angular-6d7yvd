@@ -3,9 +3,15 @@ import { Show } from '../../../../core/interfaces/show.interface';
 import { ShowService } from '../../../../shared/services/show.service';
 
 @Component({
-  selector: 'app-show-spotlight',
-  templateUrl: './show-spotlight.component.html',
-  styleUrls: ['./show-spotlight.component.scss'],
+  selector: 'app-section-trailers',
+  templateUrl: './section-trailers.component.html',
+  styles: [
+    `:host {
+    display: flex;
+    flex-direction: column;
+  }
+  `,
+  ],
 })
 export class ShowSpotlightComponent {
   shows!: Show[];
