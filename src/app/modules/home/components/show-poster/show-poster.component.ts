@@ -5,7 +5,14 @@ import { ShowService } from '../../../../shared/services/show.service';
 @Component({
   selector: 'app-show-poster',
   templateUrl: './show-poster.component.html',
-  styleUrls: ['./show-poster.component.scss'],
+  styles: [
+    `
+  :host {
+    display: flex;
+    flex-direction: column;
+  }
+  `,
+  ],
 })
 export class ShowPosterComponent {
   shows!: Show[];

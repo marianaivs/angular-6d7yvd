@@ -11,6 +11,7 @@ import { ShowSpotlightComponent } from './components/show-spotlight/show-spotlig
 import { SectionFeaturesComponent } from './components/section-features/section-features.component';
 import { SectionHeroComponent } from './components/section-hero/section-hero.component';
 import { SectionCarouselComponent } from './components/section-carousel/section-carousel.component';
+import { ShowPosterComponent } from './components/show-poster/show-poster.component';
 
 const COMPONENTS = [
   HomeComponent,
@@ -20,6 +21,7 @@ const COMPONENTS = [
   SectionFeaturesComponent,
   SectionCarouselComponent,
   ShowSpotlightComponent,
+  ShowPosterComponent,
 ];
 
 @NgModule({
