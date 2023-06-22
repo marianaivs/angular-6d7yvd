@@ -18,7 +18,7 @@ export class ShowPosterComponent {
   @Input() show!: Show;
 
   constructor(private showService: ShowService) {
-    this.show = this.showService.getAllShows();
+    /* this.show = this.showService.getAllShows(); */
   }
 
   trackById(index: number, value: Show) {

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Show } from '../../../../core/interfaces/show.interface';
 import { ShowService } from '../../../../shared/services/show.service';
 
@@ -7,10 +7,10 @@ import { ShowService } from '../../../../shared/services/show.service';
   template: `
   <section class="bg-gray-100 py-60px">
   <div class="flex flex-nowrap flex-row justify-center gap-8">
-   <ng-container *ngIf="show.length; else posterEmptyState">
-      <ng-template *ngFor="let show of shows">
+   <ng-container *ngIf="shows.length; else posterEmptyState">
+      <ng-container *ngFor="let show of shows">
         <app-show-poster [show]="show"></app-show-poster>
-      </ng-template>
+      </ng-container>
     </ng-container>
     <ng-template #posterEmptyState>
       <p>Where did all the shows go?</p>
@@ -27,12 +27,14 @@ import { ShowService } from '../../../../shared/services/show.service';
   `,
   ],
 })
-export class SectionCarouselComponent {
-  show!: Show[];
+export class SectionCarouselComponent implements OnInit {
+  shows!: Show[];
 
-  /* constructor(private showService: ShowService) {
-    this.show = this.showService.getAllShows();
-  } */
+  constructor(private showService: ShowService) {}
+
+  ngOnInit(): void {
+    this.shows = this.showService.getAllShows();
+  }
 
   trackById(index: number, value: Show) {
     return value.id;
