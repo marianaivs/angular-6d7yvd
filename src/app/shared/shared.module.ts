@@ -3,14 +3,14 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
+import { LayoutDefaultComponent } from '../layouts/layout-default/layout-default.component';
+import { LayoutSimpleComponent } from '../layouts/layout-simple/layout-simple.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ButtonComponent } from './components/button/button.component';
 import { PhoneMockupComponent } from './components/phone-mockup/phone-mockup.component';
 import { CommunityListComponent } from './components/community-list/community-list.component';
-import { NewsletterComponent } from './components/newsletter/newsletter.component';
+import { SectionNewsletterComponent } from './components/section-newsletter/section-newsletter.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { LayoutDefaultComponent } from '../layouts/layout-default/layout-default.component';
-import { LayoutSimpleComponent } from '../layouts/layout-simple/layout-simple.component';
 
 const COMPONENTS = [
   // layouts
@@ -21,8 +21,8 @@ const COMPONENTS = [
   ButtonComponent,
   HeaderComponent,
   PhoneMockupComponent,
-  NewsletterComponent,
   CommunityListComponent,
+  SectionNewsletterComponent,
   FooterComponent,
 ];
 
