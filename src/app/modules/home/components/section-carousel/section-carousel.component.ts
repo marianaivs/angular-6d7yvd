@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ShowService } from '../../../../shared/services/show.service';
 import { Show } from '../../../../core/interfaces/show.interface';
 
@@ -7,9 +7,8 @@ import { Show } from '../../../../core/interfaces/show.interface';
   template: `
   <section class="bg-gray-100 py-60px">
   <div class="flex flex-nowrap flex-row justify-center gap-8">
-  <pre>{{ shows | json }}</pre>
     <ng-container *ngIf="shows.length; else posterEmptyState">
-      <ng-template *ngFor="let show of shows" [show]="show">
+      <ng-template ngFor [ngForOf]="shows" let-show>
         <app-show-poster></app-show-poster>
       </ng-template>
     </ng-container>
@@ -21,18 +20,18 @@ import { Show } from '../../../../core/interfaces/show.interface';
 `,
   styles: [
     `
-  :host {
-    display: flex;
-    flex-direction: column;
-  }
+    :host {
+      display: flex;
+      flex-direction: column;
+    }
   `,
   ],
 })
 export class SectionCarouselComponent {
-  shows!: Show[];
+  @Input() show!: Show;
 
   constructor(private showService: ShowService) {
-    this.shows = this.showService.getAllShows();
+    this.show = this.showService.getAllShows();
   }
 
   trackById(index: number, value: Show) {
