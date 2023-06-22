@@ -8,9 +8,9 @@ import { Show } from '../../../../core/interfaces/show.interface';
   <section class="bg-gray-100 py-60px">
   <div class="flex flex-nowrap flex-row justify-center gap-8">
   <pre>{{ shows | json }}</pre>
-    <ng-container [ngIf]="shows.length">
-      <ng-template>
-        <app-show-poster [show]="shows"></app-show-poster>
+    <ng-container *ngIf="shows.length; else posterEmptyState">
+      <ng-template *ngFor="let show of shows" [show]="show">
+        <app-show-poster></app-show-poster>
       </ng-template>
     </ng-container>
     <ng-template #posterEmptyState>
