@@ -6,8 +6,11 @@ import { ShowService } from '../../../../shared/services/show.service';
   selector: 'app-section-carousel',
   template: `
   <section class="bg-gray-100 py-60px">
-  <div class="flex flex-nowrap flex-row justify-center gap-8">
+  <div class="flex flex-nowrap flex-row justify-center gap-8 ltr2">
    <ng-container *ngIf="shows.length; else posterEmptyState">
+      <ng-container *ngFor="let show of shows">
+        <app-show-poster [show]="show"></app-show-poster>
+      </ng-container>
       <ng-container *ngFor="let show of shows">
         <app-show-poster [show]="show"></app-show-poster>
       </ng-container>
@@ -18,14 +21,7 @@ import { ShowService } from '../../../../shared/services/show.service';
   </div>
 </section>
 `,
-  styles: [
-    `
-    :host {
-      display: flex;
-      flex-direction: column;
-    }
-  `,
-  ],
+  styleUrls: ['section-carousel.component.scss'],
 })
 export class SectionCarouselComponent implements OnInit {
   shows!: Show[];
