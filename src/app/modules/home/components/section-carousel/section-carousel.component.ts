@@ -7,8 +7,11 @@ import { Show } from '../../../../core/interfaces/show.interface';
   template: `
   <section class="bg-gray-100 py-60px">
   <div class="flex flex-nowrap flex-row justify-center gap-8">
+  <!--<pre>{{ shows | json }}</pre>-->
     <ng-container *ngIf="shows.length; else posterEmptyState">
-     <!--<app-show-poster *ngFor="let shows of shows; trackBy: trackById" [shows]="shows"></app-show-poster>-->
+    <ng-template *ngFor="let show of shows; trackBy: trackById" [show]="show">
+      <app-show-poster></app-show-poster>
+    </ng-template>
     </ng-container>
     <ng-template #posterEmptyState>
       <p>Where did all the shows go?</p>

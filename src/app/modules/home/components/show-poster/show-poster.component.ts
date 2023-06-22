@@ -15,10 +15,10 @@ import { ShowService } from '../../../../shared/services/show.service';
   ],
 })
 export class ShowPosterComponent {
-  shows!: Show[];
+  @Input() show!: Show[];
 
   constructor(private showService: ShowService) {
-    this.shows = this.showService.getAllShows();
+    this.show = this.showService.getAllShows();
   }
 
   trackById(index: number, value: Show) {
