@@ -9,11 +9,11 @@ export interface Comment {
 }
 
 @Component({
-  selector: 'app-community-list',
-  templateUrl: './community-list.component.html',
-  styleUrls: ['./community-list.component.scss'],
+  selector: 'app-section-community',
+  templateUrl: './section-community.component.html',
+  styleUrls: ['./section-community.component.scss'],
 })
-export class CommunityListComponent {
+export class SectionCommunityComponent {
   comments: Comment[] = [
     {
       id: 'testimonial1',

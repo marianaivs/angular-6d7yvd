@@ -8,7 +8,7 @@ import { LayoutSimpleComponent } from '../layouts/layout-simple/layout-simple.co
 import { HeaderComponent } from './components/header/header.component';
 import { ButtonComponent } from './components/button/button.component';
 import { PhoneMockupComponent } from './components/phone-mockup/phone-mockup.component';
-import { CommunityListComponent } from './components/community-list/community-list.component';
+import { SectionCommunityComponent } from './components/section-community/section-community.component';
 import { SectionNewsletterComponent } from './components/section-newsletter/section-newsletter.component';
 import { FooterComponent } from './components/footer/footer.component';
 
@@ -21,7 +21,7 @@ const COMPONENTS = [
   ButtonComponent,
   HeaderComponent,
   PhoneMockupComponent,
-  CommunityListComponent,
+  SectionCommunityComponent,
   SectionNewsletterComponent,
   FooterComponent,
 ];
