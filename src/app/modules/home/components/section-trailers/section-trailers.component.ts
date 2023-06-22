@@ -20,6 +20,10 @@ export class SectionTrailersComponent {
     this.shows = this.showService.getAllShows();
   }
 
+  handleClick(event: Event) {
+    console.log(event);
+  }
+
   trackById(index: number, value: Show) {
     return value.id;
   }

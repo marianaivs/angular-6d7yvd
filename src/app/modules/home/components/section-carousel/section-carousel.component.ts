@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { ShowService } from '../../../../shared/services/show.service';
 import { Show } from '../../../../core/interfaces/show.interface';
 
@@ -7,11 +7,11 @@ import { Show } from '../../../../core/interfaces/show.interface';
   template: `
   <section class="bg-gray-100 py-60px">
   <div class="flex flex-nowrap flex-row justify-center gap-8">
-  <!--<pre>{{ shows | json }}</pre>-->
-    <ng-container *ngIf="shows.length; else posterEmptyState">
-    <ng-template *ngFor="let show of shows; trackBy: trackById" [show]="show">
-      <app-show-poster></app-show-poster>
-    </ng-template>
+  <pre>{{ shows | json }}</pre>
+    <ng-container [ngIf]="shows.length">
+      <ng-template>
+        <app-show-poster [show]="shows"></app-show-poster>
+      </ng-template>
     </ng-container>
     <ng-template #posterEmptyState>
       <p>Where did all the shows go?</p>
