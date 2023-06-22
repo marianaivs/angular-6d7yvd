@@ -18,7 +18,6 @@ export class ShowPosterComponent {
   @Input() show!: Show[];
 
   constructor(private showService: ShowService) {
-    console.log('asdadasad');
     this.show = this.showService.getAllShows();
   }
 
