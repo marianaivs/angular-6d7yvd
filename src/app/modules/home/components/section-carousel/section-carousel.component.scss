@@ -28,9 +28,19 @@
 }
 
 .ltr1 {
-  animation: leftRight1 25s linear infinite;
+  animation: leftRight1 10s linear infinite;
 }
 
 .ltr2 {
-  animation: leftRight2 25s linear infinite;
+  animation: leftRight2 10s linear infinite;
+}
+
+@media only screen and (min-width: 768px) {
+  .ltr1 {
+    animation-duration: 20s;
+  }
+
+  .ltr2 {
+    animation-duration: 20s;
+  }
 }
