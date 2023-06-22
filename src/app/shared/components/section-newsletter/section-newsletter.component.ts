@@ -3,7 +3,13 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-section-newsletter',
   templateUrl: './section-newsletter.component.html',
-  styleUrls: ['./section-newsletter.component.scss'],
+  styles: [
+    `:host {
+    display: flex;
+    flex-direction: column;
+  }
+  `,
+  ],
 })
 export class SectionNewsletterComponent {
   constructor() {}
