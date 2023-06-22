@@ -1,85 +1,130 @@
-<section class="px-5 py-8 md:py-32 bg-trailer-poster">
-  <div class="flex flex-col gap-20 max-w-boxed-lg mx-auto md:flex-row md:justify-between md:self-stretch">
-    <div class="basis-full flex flex-col shrink-0 gap-7 md:basis-1/2 md:justify-center">
-      <!-- main description -->
-      <div class="flex flex-col gap-5 md:max-w-[570px]">
-        <h2 class="font-bold text-2xl text-gray-900 md:text-3xl">Amazing Trailers</h2>
-        <p class="opacity-80 text-base text-gray-500 md:text-xl">
-          Since most of our features work in a completely automated way, you will mainly use our apps to discover new TV shows recommended
-          for you and discuss the most interesting episodes with like-minded people.
-        </p>
-      </div>
-      <!-- series selection -->
-      <div class="flex flex-col gap-5">
-        <!-- series box -->
-        <a href="#" class="bg-white flex flex-row gap-3 items-center p-1 rounded shadow-md shadow-shade text-gray-900" (click)="handleClick($event)">
-          <img
-            src="https://stackblitz.com/files/angular-cojgnh/github/marianaivs/angular-cojgnh/main/src/assets/img/poster-house-of-cards.jpg"
-            class="rounded-lg w-8"
-          />
-          <p class="font-semibold text-base">House of Cards</p>
-        </a>
-        <!-- series box -->
-        <a
-          href="#"
-          class="
-            bg-white
-            flex flex-row
-            gap-3
-            items-center
-            opacity-50
-            p-1
-            rounded
-            text-gray-500
-            hover:opacity-100 hover:shadow-md hover:shadow-shade hover:text-gray-900
-            transition
-            ease-in-out
-            duration-500
-          "
-        >
-          <img
-            src="https://stackblitz.com/files/angular-bktjab/github/marianaivs/angular-bktjab/stash-2023-31-05_16-15-45/assets/poster-game-of-thrones.jpg"
-            class="rounded-lg w-8"
-          />
-          <p class="font-semibold text-base">Game of Thrones</p>
-        </a>
-        <!-- series box -->
-        <a
-          href="#"
-          class="
-            bg-white
-            flex flex-row
-            gap-3
-            items-center
-            opacity-50
-            p-1
-            rounded
-            text-gray-500
-            hover:opacity-100 hover:shadow-md hover:shadow-shade hover:text-gray-900
-            transition
-            ease-in-out
-            duration-500
-          "
-        >
-          <img
-            src="https://stackblitz.com/files/angular-bktjab/github/marianaivs/angular-bktjab/stash-2023-31-05_16-15-45/assets/poster-westworld.jpg"
-            class="rounded-lg w-8"
-          />
-          <p class="font-semibold text-base">Westworld</p>
-        </a>
-      </div>
+<div class="w-full flex flex-col sm:flex-row">
+  <div class="flex flex-col gap-6 flex-1 py-8">
+    <div class="flex flex-col justify-center gap-5 px-4 md:pl-0 md:pr-10 lg:r-20">
+      <h2 class="font-bold text-2xl text-gray-900 md:text-3xl">Amazing Trailers</h2>
+      <p class="opacity-80 text-base text-gray-500 md:text-xl">
+        Since most of our features work in a completely automated way, you will mainly use our apps to discover new TV shows recommended for
+        you and discuss the most interesting episodes with like-minded people.
+      </p>
     </div>
-    <!-- mockup -->
-    <div class="basis-full flex justify-center relative shrink z-10 md:basis-1/2 lg:justify-start">
+    <div class="flex flex-col gap-5">
+      <a
+        href="#"
+        class="bg-white flex flex-row gap-3 items-center p-1 rounded shadow-md shadow-shade text-gray-900"
+        (click)="handleClick($event)"
+      >
+        <img
+          src="https://stackblitz.com/files/angular-cojgnh/github/marianaivs/angular-cojgnh/main/src/assets/img/poster-house-of-cards.jpg"
+          class="rounded-lg w-8"
+        />
+        <p class="font-semibold text-base">House of Cards</p>
+      </a>
+
+      <a
+        href="#"
+        class="
+          bg-white
+          flex flex-row
+          gap-3
+          items-center
+          opacity-50
+          p-1
+          rounded
+          text-gray-500
+          hover:opacity-100 hover:shadow-md hover:shadow-shade hover:text-gray-900
+          transition
+          ease-in-out
+          duration-500
+        "
+      >
+        <img
+          src="https://stackblitz.com/files/angular-bktjab/github/marianaivs/angular-bktjab/stash-2023-31-05_16-15-45/assets/poster-game-of-thrones.jpg"
+          class="rounded-lg w-8"
+        />
+        <p class="font-semibold text-base">Game of Thrones</p>
+      </a>
+
+      <a
+        href="#"
+        class="
+          bg-white
+          flex flex-row
+          gap-3
+          items-center
+          opacity-50
+          p-1
+          rounded
+          text-gray-500
+          hover:opacity-100 hover:shadow-md hover:shadow-shade hover:text-gray-900
+          transition
+          ease-in-out
+          duration-500
+        "
+      >
+        <img
+          src="https://stackblitz.com/files/angular-bktjab/github/marianaivs/angular-bktjab/stash-2023-31-05_16-15-45/assets/poster-westworld.jpg"
+          class="rounded-lg w-8"
+        />
+        <p class="font-semibold text-base">Westworld</p>
+      </a>
+    </div>
+  </div>
+  <div class="flex flex-1 relative w-full lg:w-1/2">
+    <img
+      class="absolute h-full hidden end-0 object-cover top-0 w-3/5 lg:flex"
+      src="https://stackblitz.com/files/angular-6d7yvd/github/marianaivs/angular-6d7yvd/main/src/assets/img/poster-house-of-cards.jpg"
+      alt=""
+    />
+    <div class="mx-auto my-[60px] relative video-holder w-1/2 md:my-[100px] lg:my-[120px]">
+      <video
+        class="
+          w-full
+          h-full
+          max-w-[300px]
+          p-[4px]
+          lg:p-[0.5vw]
+          rounded-[6vw]
+          lg:rounded-[40px]
+          absolute
+          left-0
+          top-0
+          object-cover object-top
+        "
+        width="100%"
+        autoplay="autoplay"
+        loop="loop"
+        muted="muted"
+        src="https://player.vimeo.com/external/435674472.sd.mp4?s=9908ea387075904282f58443795ae1631fac1e96&amp;profile_id=165&amp;oauth2_token_id=57447761"
+        type="video/mp4"
+      ></video>
+      <img
+        class="w-full h-full max-w-[300px] relative z-10"
+        src="https://web-mobile-first.s3.eu-west-3.amazonaws.com/production/small_apple_iphone_13_pro_max_2021_1b54b42564.png"
+        alt=""
+      />
+    </div>
+  </div>
+</div>
+
+<!-- <section class="">
+  <div class="flex flex-col w-full md:flex-row">
+
+
+    <div class="flex flex-1 relative w-full lg:w-1/2">
+      <img
+        class="absolute h-full object-cover top-0 start-0 w-3/5"
+        src="https://stackblitz.com/files/angular-6d7yvd/github/marianaivs/angular-6d7yvd/main/src/assets/img/poster-house-of-cards.jpg"
+        alt=""
+      />
       <app-phone-mockup></app-phone-mockup>
-      <!--<img
+      <img
         src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/main/assets/iphone-14-pro-frame.png"
         class="absolute bg-clip-content w-[265px] z-50"
       />
       <img
         src="https://stackblitz.com/files/angular-bktjab/github/marianaivs/angular-bktjab/stash-2023-31-05_16-15-45/assets/app-mockup.jpg"
         class="w-[254px] h-[540px] rounded-[30px]"
-      />-->
+      />
     </div>
   </div>
-</section>
+</section> -->
