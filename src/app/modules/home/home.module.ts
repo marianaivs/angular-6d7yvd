@@ -7,11 +7,11 @@ import { HomeComponent } from './home.component';
 import { PageHomeComponent } from './pages/page-home/page-home.component';
 import { PageAboutComponent } from './pages/page-about/page-about.component';
 
-import { ShowSpotlightComponent } from './components/show-spotlight/show-spotlight.component';
 import { SectionFeaturesComponent } from './components/section-features/section-features.component';
 import { SectionHeroComponent } from './components/section-hero/section-hero.component';
 import { SectionCarouselComponent } from './components/section-carousel/section-carousel.component';
 import { ShowPosterComponent } from './components/show-poster/show-poster.component';
+import { SectionTrailersComponent } from './components/section-trailers/section-trailers.component';
 
 const COMPONENTS = [
   HomeComponent,
@@ -20,8 +20,8 @@ const COMPONENTS = [
   SectionHeroComponent,
   SectionFeaturesComponent,
   SectionCarouselComponent,
-  ShowSpotlightComponent,
   ShowPosterComponent,
+  SectionTrailersComponent,
 ];
 
 @NgModule({

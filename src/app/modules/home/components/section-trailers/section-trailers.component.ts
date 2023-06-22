@@ -13,7 +13,7 @@ import { ShowService } from '../../../../shared/services/show.service';
   `,
   ],
 })
-export class ShowSpotlightComponent {
+export class SectionTrailersComponent {
   shows!: Show[];
 
   constructor(private showService: ShowService) {
