@@ -5,7 +5,7 @@
         <ng-container *ngFor="let show of shows">
           <app-show-poster class="ltr1" [show]="show"></app-show-poster>
           <div class="absolute top-0">
-            <app-show-poster class="ltr2 md:start-0" [show]="show"></app-show-poster>
+            <app-show-poster class="flex flex-row ltr2 md:start-0" [show]="show"></app-show-poster>
           </div>
         </ng-container>
       </ng-container>
