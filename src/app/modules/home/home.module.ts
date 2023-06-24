@@ -12,6 +12,7 @@ import { SectionFeaturesComponent } from './components/section-features/section-
 import { ShowPosterComponent } from './components/show-poster/show-poster.component';
 import { SectionCarouselComponent } from './components/section-carousel/section-carousel.component';
 import { SectionTrailersComponent } from './components/section-trailers/section-trailers.component';
+import { SectionHeroAboutComponent } from './components/section-hero-about/section-hero-about.component';
 
 const COMPONENTS = [
   HomeComponent,
@@ -22,6 +23,7 @@ const COMPONENTS = [
   ShowPosterComponent,
   SectionCarouselComponent,
   SectionTrailersComponent,
+  SectionHeroAboutComponent,
 ];
 
 @NgModule({
