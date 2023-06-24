@@ -39,13 +39,6 @@
   }
 }
 
-/* Horizontal Animation */
-.pause-animation:hover {
-  .animate {
-    animation-play-state: paused;
-  }
-}
-
 .ltr1 {
   animation: leftRight1 20s linear infinite;
 }

@@ -9,7 +9,7 @@ import { ShowService } from '../../../../shared/services/show.service';
     `
   :host {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
   `,
   ],

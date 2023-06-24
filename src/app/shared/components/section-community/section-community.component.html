@@ -17,9 +17,9 @@
       </div>
     </div>
     <!-- testimonials -->
-    <div class="basis-full flex gap-5 justify-center pause-animation relative shrink z-10 md:basis-1/2 lg:justify-start md:-my-56">
+    <div class="basis-full flex gap-5 justify-center relative shrink z-10 md:basis-1/2 lg:justify-start md:-my-56">
       <!-- carousel both (já está animado) -->
-      <div class="animate cursor-pointer flex flex-row gap-5 ltr1 md:flex-col">
+      <div class="flex flex-row gap-5 ltr1 md:flex-col">
         <!-- testimonial boxes -->
         <ng-container *ngIf="comments.length; else commentsEmptyState">
           <ng-container *ngFor="let comment of comments; trackBy: trackById">
@@ -33,7 +33,7 @@
       </div>
 
       <!-- carousel both (já está animado) -->
-      <div class="absolute animate cursor-pointer flex flex-row gap-5 top-0 ltr2 md:flex-col">
+      <div class="absolute flex flex-row gap-5 top-0 ltr2 md:flex-col">
         <!-- testimonial boxes -->
         <ng-container *ngIf="comments.length; else commentsEmptyState">
           <ng-container *ngFor="let comment of comments; trackBy: trackById">
@@ -47,7 +47,7 @@
       </div>
 
       <!-- carousel down -->
-      <div class="animate animate-down1 cursor-pointer md:flex flex-row hidden gap-5 md:flex-col">
+      <div class="animate-down1 md:flex flex-row hidden gap-5 md:flex-col">
         <!-- testimonial boxes -->
         <ng-container *ngIf="comments.length; else commentsEmptyState">
           <ng-container *ngFor="let comment of comments; trackBy: trackById">
@@ -59,7 +59,7 @@
           <div class="text-white">Empty State</div>
         </ng-template>
       </div>
-      <div class="animate animate-down2 absolute cursor-pointer md:flex flex-row hidden gap-5 end-0 md:flex-col">
+      <div class="animate-down2 absolute md:flex flex-row hidden gap-5 end-0 md:flex-col">
         <!-- testimonial boxes -->
         <ng-container *ngIf="comments.length; else commentsEmptyState">
           <ng-container *ngFor="let comment of comments; trackBy: trackById">

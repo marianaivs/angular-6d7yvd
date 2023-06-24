@@ -1,12 +1,12 @@
 <section class="bg-gray-100 py-60px">
-  <div class="pause-animation flex flex-nowrap flex-row justify-center gap-8 relative">
-    <div class="animate cursor-pointer flex flex-row gap-5 ltr1 md:flex-col">
+  <div class="flex flex-nowrap flex-row justify-center gap-8 pause-animation relative">
+    <div class="animate cursor-pointer">
       <ng-container *ngIf="shows.length; else posterEmptyState">
-        <ng-container *ngFor="let show of shows">
-          <app-show-poster class="ltr1" [show]="show"></app-show-poster>
-          <div class="absolute top-0">
-            <app-show-poster class="flex flex-row ltr2 md:start-0" [show]="show"></app-show-poster>
-          </div>
+        <ng-container class="absolute top-0 start-0" *ngFor="let show of shows">
+          <app-show-poster class="flex flex-row gap-5" [show]="show"></app-show-poster>
+        </ng-container>
+        <ng-container class="absolute top-0 start-0" *ngFor="let show of shows">
+          <app-show-poster class="flex flex-row gap-5 md:start-0" [show]="show"></app-show-poster>
         </ng-container>
       </ng-container>
       <ng-template #posterEmptyState>
