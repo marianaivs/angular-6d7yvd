@@ -30,7 +30,7 @@ import { Component, OnInit } from '@angular/core';
   </section>
 </div>
 `,
-  styleUrls: ['./section-hero-about.component.css'],
+  styleUrls: ['./section-hero-about.component.scss'],
 })
 export class SectionHeroAboutComponent implements OnInit {
   constructor() {}
