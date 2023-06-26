@@ -17,9 +17,7 @@ import { ShowService } from '../../../../shared/services/show.service';
 export class ShowPosterComponent {
   @Input() show!: Show;
 
-  constructor(private showService: ShowService) {
-    /* this.show = this.showService.getAllShows(); */
-  }
+  constructor(private showService: ShowService) {}
 
   trackById(index: number, value: Show) {
     return value.id;
