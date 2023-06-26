@@ -26,6 +26,23 @@ type PhoneMockupType = typeof PhoneMockupEnum[keyof typeof PhoneMockupEnum];
         mask-image: url('../assets/img/phone-frame.png');
         -webkit-mask-image: url('../assets/img/phone-frame.png');
       }
+
+      .floating {
+        animation: floating 4s linear infinite;
+      }
+      
+      @keyframes floating {
+        0% {
+          transform: translateY(10px);
+        }
+        50% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(10px);
+        }
+      }
+      
       
     `,
   ],

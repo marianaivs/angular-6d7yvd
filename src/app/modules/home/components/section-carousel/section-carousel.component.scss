@@ -3,18 +3,18 @@
   flex-direction: column;
 
   @keyframes animate-marquee {
-    0% {
+    from {
       transform: translateX(-100%);
     }
-    100% {
+    to {
       transform: translateX(0%);
     }
   }
   @keyframes animate-marquee2 {
-    0% {
+    from {
       transform: translateX(0%);
     }
-    100% {
+    to {
       transform: translateX(100%);
     }
   }
