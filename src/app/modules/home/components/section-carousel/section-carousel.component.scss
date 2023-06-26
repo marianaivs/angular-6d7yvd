@@ -20,6 +20,13 @@
   }
 }
 
+.animate:hover {
+  .animate-marquee,
+  .animate-marquee2 {
+    animation-play-state: paused;
+  }
+}
+
 .animate-marquee {
   animation: animate-marquee 15s linear infinite;
 }
