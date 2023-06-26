@@ -12,35 +12,28 @@
   }
   @keyframes leftRight2 {
     0% {
-      transform: translateX(calc(0% + 1.25rem));
+      transform: translateX(calc(0% - 14rem));
     }
     100% {
-      transform: translateX(calc(100% + 1.25rem));
+      transform: translateX(calc(100% - 14rem));
     }
-  }
-}
-
-/* Horizontal Animation */
-.pause-animation:hover {
-  .animate {
-    animation-play-state: paused;
   }
 }
 
 .ltr1 {
-  animation: leftRight1 15s linear infinite;
+  animation: leftRight1 25s linear infinite;
 }
 
 .ltr2 {
-  animation: leftRight2 15s linear infinite;
+  animation: leftRight2 25s linear infinite;
 }
 
 @media only screen and (min-width: 768px) {
   .ltr1 {
-    animation-duration: 20s;
+    animation: leftRight1 10s linear infinite;
   }
 
   .ltr2 {
-    animation-duration: 20s;
+    animation: leftRight2 10s linear infinite;
   }
 }
