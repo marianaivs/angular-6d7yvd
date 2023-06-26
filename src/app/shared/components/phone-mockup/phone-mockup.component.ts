@@ -14,7 +14,19 @@ type PhoneMockupType = typeof PhoneMockupEnum[keyof typeof PhoneMockupEnum];
       :host {
         display: flex;
         flex-direction: column;
-      }  
+      }
+      
+      .iphone-mask {
+        mask-position: center;
+        -webkit-mask-position: center;
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        mask-size: contain;
+        -webkit-mask-size: contain;
+        mask-image: url('../assets/img/phone-frame.png');
+        -webkit-mask-image: url('../assets/img/phone-frame.png');
+      }
+      
     `,
   ],
 })
