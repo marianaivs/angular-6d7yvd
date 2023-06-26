@@ -11,7 +11,7 @@ import { ShowService } from '../../../../shared/services/show.service';
     flex-direction: column;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     .custom-margin {
       max-width: 600px;
       margin-left: calc(50% - 600px);
