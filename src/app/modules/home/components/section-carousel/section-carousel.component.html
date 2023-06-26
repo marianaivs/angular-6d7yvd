@@ -1,6 +1,6 @@
 <section class="bg-gray-100 py-60px">
   <div class="flex flex-nowrap flex-row justify-center gap-5 relative">
-    <div class="flex flex-row gap-5 animate-marquee">
+    <div class="flex flex-row gap-5 animate-marquee absolute start-0">
       <ng-container *ngIf="shows.length; else posterEmptyState">
         <ng-container *ngFor="let show of shows">
           <app-show-poster [show]="show"></app-show-poster>
@@ -12,17 +12,7 @@
     </div>
     <div class="flex flex-row gap-5 animate-marquee2">
       <ng-container *ngIf="shows.length; else posterEmptyState">
-        <ng-container class="absolute" *ngFor="let show of shows">
-          <app-show-poster [show]="show"></app-show-poster>
-        </ng-container>
-      </ng-container>
-      <ng-template #posterEmptyState>
-        <p>Where did all the shows go?</p>
-      </ng-template>
-    </div>
-    <div class="flex flex-row gap-5 animate-marquee3">
-      <ng-container *ngIf="shows.length; else posterEmptyState">
-        <ng-container class="absolute" *ngFor="let show of shows">
+        <ng-container *ngFor="let show of shows">
           <app-show-poster [show]="show"></app-show-poster>
         </ng-container>
       </ng-container>

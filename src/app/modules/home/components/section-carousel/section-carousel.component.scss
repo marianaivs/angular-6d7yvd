@@ -1,8 +1,8 @@
-/*:host {
+:host {
   display: flex;
   flex-direction: column;
 
-  @keyframes leftRight1 {
+  @keyframes animate-marquee {
     0% {
       transform: translateX(0%);
     }
@@ -10,21 +10,20 @@
       transform: translateX(-100%);
     }
   }
-  @keyframes leftRight2 {
+  @keyframes animate-marquee2 {
     0% {
-      transform: translateX(100%);
+      transform: translateX(calc(100% + 6.75rem));
     }
     100% {
-      transform: translateX(0%);
+      transform: translateX(calc(0% + 6.75rem));
     }
   }
 }
 
-.ltr1 {
-  animation: leftRight1 5s linear infinite;
+.animate-marquee {
+  animation: animate-marquee 15s linear infinite;
 }
 
-.ltr2 {
-  animation: leftRight2 5s linear infinite;
+.animate-marquee2 {
+  animation: animate-marquee2 15s linear infinite;
 }
-*/

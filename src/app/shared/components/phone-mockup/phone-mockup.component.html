@@ -1,7 +1,7 @@
 <div class="flex justify-center relative shrink-0 z-10">
   <img
-    src="https://stackblitz.com/files/angular-6d7yvd/github/marianaivs/angular-6d7yvd/main/src/assets/img/phone-frame.png"
-    class="iphone-frame max-h-[600px] rounded-[50px] z-50"
+    src="https://stackblitz.com/files/angular-6d7yvd/github/marianaivs/angular-6d7yvd/main/src/assets/img/mask-2.png"
+    class="max-h-[600px] z-50"
   />
   <video
     *ngIf="getSrcType(src) && getSrcType(src) === phoneMockupEnum.Video"
@@ -11,7 +11,10 @@
   <img
     *ngIf="getSrcType(src) && getSrcType(src) === phoneMockupEnum.Image"
     [src]="src"
-    class="absolute max-h-[600px] top-0 rounded-[50px] start-0 w-auto z-50"
+    class="absolute max-h-[600px] top-0 start-0 w-auto z-50"
   />
-  <img src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/main/assets/app-mockup.png" class="absolute max-h-[600px]" />
+  <img
+    src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/main/assets/app-mockup.png"
+    class="absolute iphone-mask max-h-[600px]"
+  />
 </div>
