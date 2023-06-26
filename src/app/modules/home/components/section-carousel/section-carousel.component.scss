@@ -1,21 +1,21 @@
-:host {
+/* :host {
   display: flex;
   flex-direction: column;
 
   @keyframes leftRight1 {
     0% {
-      transform: translateX(calc(-100% + 14rem));
-    }
-    100% {
-      transform: translateX(calc(0% + 14rem));
-    }
-  }
-  @keyframes leftRight2 {
-    0% {
       transform: translateX(0%);
     }
     100% {
       transform: translateX(100%);
+    }
+  }
+  @keyframes leftRight2 {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
     }
   }
 }
@@ -27,3 +27,4 @@
 .ltr2 {
   animation: leftRight2 5s linear infinite;
 }
+ */

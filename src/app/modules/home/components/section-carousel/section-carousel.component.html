@@ -1,12 +1,19 @@
 <section class="bg-gray-100 py-60px">
-  <div class="flex flex-nowrap flex-row justify-center gap-8 relative">
-    <div class="flex flex-row gap-5">
+  <div class="flex flex-nowrap flex-row justify-center gap-5 relative">
+    <div class="flex flex-row gap-5 ltr1">
       <ng-container *ngIf="shows.length; else posterEmptyState">
         <ng-container *ngFor="let show of shows">
-          <app-show-poster class="ltr1" [show]="show"></app-show-poster>
+          <app-show-poster [show]="show"></app-show-poster>
         </ng-container>
-        <ng-container class="absolute end-0" *ngFor="let show of shows">
-          <app-show-poster class="ltr2" [show]="show"></app-show-poster>
+      </ng-container>
+      <ng-template #posterEmptyState>
+        <p>Where did all the shows go?</p>
+      </ng-template>
+    </div>
+    <div class="flex flex-row gap-5 ltr2">
+      <ng-container *ngIf="shows.length; else posterEmptyState">
+        <ng-container class="absolute" *ngFor="let show of shows">
+          <app-show-poster [show]="show"></app-show-poster>
         </ng-container>
       </ng-container>
       <ng-template #posterEmptyState>
