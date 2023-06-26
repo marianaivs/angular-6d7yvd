@@ -10,7 +10,7 @@
         <p>Where did all the shows go?</p>
       </ng-template>
     </div>
-    <div class="absolute flex flex-row end-0 md:start-[-4.25rem] gap-5 animate-marquee2">
+    <div class="absolute flex flex-row gap-5 animate-marquee2">
       <ng-container *ngIf="shows.length; else posterEmptyState">
         <ng-container *ngFor="let show of shows">
           <app-show-poster [show]="show"></app-show-poster>
