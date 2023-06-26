@@ -28,18 +28,18 @@ type PhoneMockupType = typeof PhoneMockupEnum[keyof typeof PhoneMockupEnum];
       }
 
       .floating {
-        animation: floating 4s linear infinite;
+        animation: floating 5s ease-in-out infinite;
       }
       
       @keyframes floating {
         0% {
-          transform: translateY(10px);
+          transform: translateY(20px);
         }
         50% {
           transform: translateY(0);
         }
         100% {
-          transform: translateY(10px);
+          transform: translateY(20px);
         }
       }
       
