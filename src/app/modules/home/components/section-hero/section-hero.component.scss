@@ -2,3 +2,16 @@
   display: flex;
   flex-direction: column;
 }
+
+.floating {
+  animation: floating 3s linear infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
