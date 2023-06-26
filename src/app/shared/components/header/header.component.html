@@ -1,8 +1,8 @@
 <!-- header -->
-<nav class="max-w-boxed-md mx-auto py-2.5 w-full">
+<nav class="max-w-boxed-md mx-auto px-5 py-2.5 w-full md:px-0">
   <ul class="flex gap-20 items-center justify-between w-full">
     <li>
-      <a [routerLink]="['/']" altButton appearance="ghost" class="ps-0 pe-0 !text-black">
+      <a [routerLink]="['/']" altButton appearance="ghost" class="!ps-0 !pe-0">
         <img
           class="w-auto"
           src="https://raw.githubusercontent.com/marianaivs/angular-bktjab/e79ed90af8258bbff7f5c9babdbe2747931c648a/assets/logo.svg"
@@ -10,10 +10,10 @@
       </a>
     </li>
     <ul class="flex gap-8 items-center justify-between w-auto">
-      <li class="hidden px-4 py-2 md:flex transform hover:-translate-y-1 duration-500">
-        <a [routerLink]="['/']" fragment="features" href="#features">Features</a>
+      <li class="hidden px-4 md:flex transform hover:-translate-y-1 duration-500">
+        <a [routerLink]="['/']" appearance="ghost" fragment="features" href="#features">Features</a>
       </li>
-      <li class="hidden px-4 py-2 md:flex transform hover:-translate-y-1 duration-500">
+      <li class="hidden px-4 md:flex transform hover:-translate-y-1 duration-500">
         <a [routerLink]="['/about']" altButton appearance="ghost" class="!text-black">About Us</a>
       </li>
       <li class="bg-primary rounded hover:bg-purple-500 transition ease-in-out duration-400">
